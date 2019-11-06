@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/dark_theme1">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/class_name"
+        android:importantForAutofill="no" tools:targetApi="o"
+        android:textColor="?attr/dark_theme2"
+        android:textColorHint="?attr/dark_theme2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/class_room"
+        android:importantForAutofill="no" tools:targetApi="o"
+        android:textColor="?attr/dark_theme2"
+        android:textColorHint="?attr/dark_theme2"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/class_prof"
+        android:importantForAutofill="no" tools:targetApi="o"
+        android:textColor="?attr/dark_theme2"
+        android:textColorHint="?attr/dark_theme2"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="?attr/dark_theme2"
+        android:textAlignment="center" />
+
+    <include layout="@layout/time_label_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"/>
+
+    <include layout="@layout/time_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <include layout="@layout/button_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

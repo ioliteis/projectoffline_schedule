@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">時間割</string>
+    <string name="action_settings">設定</string>
+    <string name="action_about">このアプリについて</string>
+    <string name="action_edit">編集</string>
+
+    <string name="about_source">ソースコード</string>
+    <string name="about_version">バージョン</string>
+    <string name="about_po">Project Offlineについて</string>
+    <string name="about_about">Project Offline Schedule</string>
+    <string name="about_icon">Icon</string>
+    <string name="about_privacy">プライバシーポリシー</string>
+    <string name="about_copy">コピーしました。</string>
+    <string name="about_licenses">オープンソースライセンス</string>
+    <string name="about_mastodon">マストドン アカウント</string>
+    <string name="about_website">Project Offline のウェブサイト</string>
+    <string name="about_privacy_comment">プライバシーポリシーをお読みください。</string>
+    <string name="about_contact">活動状況はこちら。</string>
+    <string name="about_nuke">全時間割を削除</string>
+    <string name="about_dangerous">危険!</string>
+
+    <string-array name="my_header_title">
+        <item></item>
+        <item>月</item>
+        <item>火</item>
+        <item>水</item>
+        <item>木</item>
+        <item>金</item>
+    </string-array>
+
+    <string name="version">0.1</string>
+
+    <string name="preference_theme">テーマ</string>
+    <string name="preference_theme_content">ダークテーマ</string>
+    <string name="preference_theme_summary">アプリの再起動が必要です。</string>
+    <string name="class_name">講義名</string>
+    <string name="class_room">教室</string>
+    <string name="class_prof">講義者名</string>
+    <string name="startTime">9:00</string>
+    <string name="endTime">10:30</string>
+    <string name="startTimeLabel">開始時刻</string>
+    <string name="endTimeLabel">終了時刻</string>
+    <string name="button_delete">削除</string>
+    <string name="button_add">追加</string>
+
+    <string name="monday">月曜日</string>
+    <string name="tuesday">火曜日</string>
+    <string name="wednesday">水曜日</string>
+    <string name="thursday">木曜日</string>
+    <string name="friday">金曜日</string>
+    <string name="spinnerView">spinnerView</string>
+</resources>

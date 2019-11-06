@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="?attr/dark_theme1">
+
+    <com.github.tlaabs.timetableview.TimetableView
+        android:id="@+id/timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:header_title="@array/my_header_title" />
+
+
+</LinearLayout>
