@@ -1,4 +1,4 @@
-# projectoffline_schedule
+# Project Offline Schedule
 <img src="https://raw.githubusercontent.com/ioliteis/projectoffline_schedule/master/app/src/main/ic_launcher-web.png" width="200px"></img>
 ## Introduction
 A simple class schedule app.

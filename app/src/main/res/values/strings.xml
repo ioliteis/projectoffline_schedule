@@ -28,7 +28,7 @@
         <item>Fri</item>
     </string-array>
 
-    <string name="version">0.1</string>
+    <string name="version">0.1.1</string>
 
     <string name="preference_theme_content">Dark Theme</string>
     <string name="preference_theme_summary">Relaunching app is required.</string>
@@ -49,6 +49,4 @@
     <string name="wednesday">Wednesday</string>
     <string name="thursday">Thursday</string>
     <string name="friday">Friday</string>
-    <string name="spinnerView">spinnerView</string>
-
 </resources>
