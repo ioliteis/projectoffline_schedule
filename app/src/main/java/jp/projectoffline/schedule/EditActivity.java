@@ -93,7 +93,11 @@ public class EditActivity extends AppCompatActivity {
                 TimePickerDialog dialog = new TimePickerDialog(EditActivity.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker timePicker, int hours, int minutes) {
-                        startTimeView.setText(hours + ":" + minutes);
+                        if (minutes < 10) {
+                            startTimeView.setText(hours + ":0" + minutes);
+                        } else {
+                            startTimeView.setText(hours + ":" + minutes);
+                        }
                         schedule.getStartTime().setHour(hours);
                         schedule.getStartTime().setMinute(minutes);
                     }
@@ -108,7 +112,11 @@ public class EditActivity extends AppCompatActivity {
                 TimePickerDialog dialog = new TimePickerDialog(EditActivity.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker timePicker, int hours, int minutes) {
-                        endTimeView.setText(hours + ":" + minutes);
+                        if (minutes < 10) {
+                            endTimeView.setText(hours + ":0" + minutes);
+                        } else {
+                            endTimeView.setText(hours + ":" + minutes);
+                        }
                         schedule.getEndTime().setHour(hours);
                         schedule.getEndTime().setMinute(minutes);
                     }
@@ -116,7 +124,7 @@ public class EditActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
-        //Default Times
+
         schedule.setStartTime(new Time(9,0));
         schedule.setEndTime(new Time(10,30));
         //Add schedule
@@ -160,6 +168,23 @@ public class EditActivity extends AppCompatActivity {
         if(mode == MainActivity.REQUEST_EDIT){
             loadScheduleData();
             deleteButton.setVisibility(View.VISIBLE);
+
+            int startTimeHour = schedule.getStartTime().getHour();
+            int endTimeHour = schedule.getEndTime().getHour();
+            int startTimeMin = schedule.getStartTime().getMinute();
+            int endTimeMin = schedule.getEndTime().getMinute();
+
+            //16:5 -> 16:05
+            if (startTimeMin < 10) {
+                startTimeView.setText(startTimeHour + ":0" + startTimeMin);
+            } else {
+                startTimeView.setText(startTimeHour + ":" + startTimeMin);
+            }
+            if (endTimeMin < 10) {
+                endTimeView.setText(endTimeHour + ":0" + endTimeMin);
+            } else {
+                endTimeView.setText(endTimeHour + ":" + endTimeMin);
+            }
         }
     }
     //Load schedule data
