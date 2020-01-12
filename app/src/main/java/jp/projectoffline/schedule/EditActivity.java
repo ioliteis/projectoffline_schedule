@@ -63,8 +63,14 @@ public class EditActivity extends AppCompatActivity {
         schedule = new Schedule();
 
         //Spinner
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> adapter;
+        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true)){
+            adapter = new ArrayAdapter<>(this, R.layout.spinner_text);
+            adapter.setDropDownViewResource(R.layout.spinner_color);
+        } else {
+            adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        }
 
         adapter.add(getString(R.string.monday));
         adapter.add(getString(R.string.tuesday));
