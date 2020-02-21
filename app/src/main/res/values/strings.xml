@@ -28,7 +28,7 @@
         <item>Fri</item>
     </string-array>
 
-    <string name="version">0.2.1</string>
+    <string name="version">0.2.2</string>
 
     <string name="preference_theme_content">Dark Theme</string>
     <string name="preference_theme">Theme</string>

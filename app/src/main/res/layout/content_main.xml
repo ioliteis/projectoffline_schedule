@@ -8,7 +8,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="?attr/dark_theme1">
+    android:background="?attr/colorPrimary">
 
     <com.github.tlaabs.timetableview.TimetableView
         android:id="@+id/timetable"
